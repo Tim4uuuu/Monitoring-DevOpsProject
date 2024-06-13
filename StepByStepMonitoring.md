@@ -6,7 +6,33 @@
 - Ensure you have appropriate permissions to download, extract, and run these binaries.
 - Replace `<version>` with the appropriate version number you wish to download.
 
-#### VM-1 (Node Exporter)
+#### VM-1 (Node Exporter and web application)
+Code setup (web application)
+
+1.clone the project 
+```bash
+$ git clone https://github.com/Tim4uuuu/Boardgame.git (the web application)
+```
+2.Install Java and Maven
+```bash
+$ sudo apt install openjdk-17-jre-headless
+$ sudo apt install maven -y
+```
+3. List 
+```bash
+$ ls
+```
+WebApplication  node_exporter
+4.package and run the application
+```bash
+$ mvn package
+$ java -jar database_service_project-0.0.3-SNAPSHOT.jar
+```
+4.run and access in browser
+http://IPv4address:8080
+
+Node Exporter
+
 1. **Download Node Exporter**
    ```bash
    wget https://github.com/prometheus/node_exporter/releases/download/v1.8.1/node_exporter-1.8.1.linux-amd64.tar.gz
